@@ -42,6 +42,9 @@ h3 {
 p {
   font-size: 1rem;
 }
+:focus {
+  outline: -webkit-focus-ring-color auto 0;
+}
 .app {
   text-align: center;
 }
@@ -69,11 +72,22 @@ p {
 .card[visible-state='reversed'] {
   flex-direction: column-reverse;
 }
+.card[display='hide'] {
+  display: none;
+}
+.card[display='show'] {
+  display: true;
+}
 .card___title {
   max-width: 70vmin ;
 }
 .card__subtitle {
   max-width: 70vmin ;
+}
+.card__element-wrapper {
+  max-width: 70vmin ;
+  display: flex;
+  padding: 1rem;
 }
 @keyframes App-logo-spin {
   from {
@@ -100,5 +114,43 @@ p {
   to {
     transform: rotate(360deg);
   }
+}
+.button {
+  width: 100%;
+  max-width: 200%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  border: 2px solid #8D9090;
+  background: transparent;
+  border-radius: 2rem;
+  padding: 0.5rem 2rem;
+  color: #8D9090;
+  font-size: 1rem;
+  margin: 0 0.25rem;
+  cursor: pointer;
+}
+.button:hover {
+  border-color: #f5f500;
+  background: yellow;
+  color: #4B4F54;
+}
+.button--primary {
+  border-color: #73B2E0;
+  background-color: #73B2E0;
+  color: #ffffff;
+}
+.button--negative {
+  border-color: #ffffff;
+  background-color: #ffffff;
+  color: #8D9090;
+}
+.button--negative--primary {
+  border-color: #ffffff;
+  background-color: #ffffff;
+  color: #73B2E0;
+}
+.button__text {
+  margin: 0 0.125rem;
 }
 /*# sourceMappingURL=App.css.map */

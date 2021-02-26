@@ -1,0 +1,46 @@
+.button {
+    width: 100%;
+    max-width: 200%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    border: 2px solid @app-secondary;
+    background: transparent;
+    border-radius: 2rem;
+    padding: .5rem 2rem;
+    color: @app-secondary;
+    font-size: 1rem;
+    margin: 0 .25rem;
+    cursor: pointer;
+
+    &:hover {
+      border-color: darken( @app-special, 2);
+      background: @app-special;
+      color: @app-dark;
+    }
+
+    &--primary {
+      border-color: @app-primary;
+      background-color: @app-primary;
+      color: @app-white;
+    }
+  
+    &--negative {
+      border-color: @app-white;
+      background-color: @app-white;
+      color: @app-secondary;
+
+      &--primary {
+        border-color: @app-white;
+        background-color: @app-white;
+        color: @app-primary;
+      }
+    }
+
+    &__text{
+      margin: 0 .125rem;
+    }
+}
+
+// animations
+

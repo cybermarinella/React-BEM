@@ -28,19 +28,33 @@
 
 // attributes
 
-&[visible-state='reversed'] {
-    flex-direction: column-reverse;
-}
+    &[visible-state='reversed'] {
+        flex-direction: column-reverse;
+    }
+
+    &[display='hide'] {
+        display: none;
+    }
+
+    &[display='show'] {
+        display: true;
+    }
 
 // elements
 
-&___title {
-max-width: 70vmin ;
-}
+    &___title {
+    max-width: 70vmin ;
+    }
 
-&__subtitle {
-max-width: 70vmin ;
-}
+    &__subtitle {
+    max-width: 70vmin ;
+    }
+
+    &__element-wrapper {
+      max-width: 70vmin ;
+      display: flex;
+      padding: 1rem;
+    }
 }
 
 

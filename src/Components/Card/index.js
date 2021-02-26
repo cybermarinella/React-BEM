@@ -1,10 +1,10 @@
 import './index.less';
 
 
-function Card({img2, cardModifier,visibleState, title, subtitle, text,  element }) {
+function Card({id, img, cardModifier,visibleState, title, subtitle, text,  element, displayState, cardElWrapperModifier }) {
   return (
-  <section className={`card card--${cardModifier}`} visible-state={`${visibleState}`}>
-    {img2}
+  <section id={id} className={`card ${cardModifier}`} visible-state={`${visibleState}`} display={`${displayState}`}>
+    {img}
     {title && ( 
       <h1 className="card__title">{title}</h1> 
     )}
@@ -14,7 +14,11 @@ function Card({img2, cardModifier,visibleState, title, subtitle, text,  element 
     {text && (
       <p className="card__text">{text}</p>
     ) }
-    {element }
+    {element && (
+      <div className={`card__element-wrapper ${cardElWrapperModifier}`}>
+        {element}
+      </div>
+    )}
   </section>
   );
 }

@@ -7,6 +7,7 @@
 @app-light: #efefef;
 @app-white: #ffffff;
 @app-black: #000000;
+@app-special: yellow;
 
 // setup
 html, body {
@@ -35,6 +36,10 @@ p{
   font-size: 1rem;
 }
 
+:focus {
+  outline: -webkit-focus-ring-color auto 0;
+}
+
 
 
 // atomic classes
@@ -44,6 +49,6 @@ p{
 }
 
 
-
 @import "./Components/Card/index.less";
 @import "./Components/Logo/index.less";
+@import "./Components/Button/index.less";
