@@ -1,0 +1,57 @@
+
+// components
+
+.card {
+    background-color: @app-light;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    // states
+
+    &--primary {
+        background-color: @app-primary;
+        color: @app-white;
+    }
+
+    &--white {
+        background-color: @app-white;
+        color: @app-primary;
+    }
+
+    &--dark {
+        background-color: @app-dark;
+        color: @app-white;
+    }
+
+// attributes
+
+&[visible-state='reversed'] {
+    flex-direction: column-reverse;
+}
+
+// elements
+
+&___title {
+max-width: 70vmin ;
+}
+
+&__subtitle {
+max-width: 70vmin ;
+}
+}
+
+
+
+// animations
+
+@keyframes App-logo-spin {
+from {
+transform: rotate(0deg);
+}
+to {
+transform: rotate(360deg);
+}
+}

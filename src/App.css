@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh7USew8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHvxk.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh6UVew8.ttf) format('truetype');
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #4B4F54;
+  font-size: 16px;
+}
+h1,
+h2 {
+  margin: 0;
+  font-weight: 700;
+}
+h3 {
+  margin: 0;
+  font-weight: 300;
+}
+p {
+  font-size: 1rem;
+}
+.app {
+  text-align: center;
+}
+.card {
+  background-color: #efefef;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+.card--primary {
+  background-color: #73B2E0;
+  color: #ffffff;
+}
+.card--white {
+  background-color: #ffffff;
+  color: #73B2E0;
+}
+.card--dark {
+  background-color: #4B4F54;
+  color: #ffffff;
+}
+.card[visible-state='reversed'] {
+  flex-direction: column-reverse;
+}
+.card___title {
+  max-width: 70vmin ;
+}
+.card__subtitle {
+  max-width: 70vmin ;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.logo {
+  animation: App-logo-spin infinite 10s linear;
+  height: 25vmin;
+  padding: 2.5vmin;
+  margin: 2.5vmin;
+}
+.logo--negative-bk {
+  background-color: #ffffff;
+  border-radius: 40vmin;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=App.css.map */

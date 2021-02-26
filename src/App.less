@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+// globals
+@app-primary: #73B2E0;
+@app-secondary: #8D9090;
+@app-dark: #4B4F54;
+@app-light: #efefef;
+@app-white: #ffffff;
+@app-black: #000000;
+
+// setup
+html, body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: @app-dark;
+  font-size: 16px;
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-weight: 700;
+}
+
+h3 {
+  margin: 0;
+  font-weight: 300;
+}
+
+p{
+  font-size: 1rem;
+}
+
+
+
+// atomic classes
+
+.app {
+  text-align: center;
+}
+
+
+
+@import "./Components/Card/index.less";
+@import "./Components/Logo/index.less";
