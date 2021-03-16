@@ -36,10 +36,7 @@ function App() {
     <Card
       id="why"
       cardModifier='card--primary'
-      img={<Logo 
-        img={logo} 
-        modifier='logo--negative-bk'
-      />}
+      img={<Logo img={logo} modifier='logo--negative-bk' />}
       title='Why BEM ?'
       subtitle='"There are only two hard problems in Computer Science: cache invalidation and naming things"'
       text='Phil Karlton'
