@@ -2,7 +2,7 @@ import './index.less';
 
 function Button(props) {
   return (
-   <button className={`button ${props.modifier}`} href={props.link}>
+   <button className={`button ${props.modifier}`} href={props.link} onClick={props.onClick}>
     {props.icon && (
       <i className={`button__icon ${props.iconModifier}`}>
         {props.icon}
