@@ -1,3 +1,4 @@
+import React from "react";
 import './index.less';
 
 
@@ -9,7 +10,7 @@ function Card({id, img, cardModifier,visibleState, title, subtitle, text,  eleme
       <h1 className="card__title">{title}</h1> 
     )}
     {subtitle && (
-      <h3 className="card__subtitle">{subtitle}</h3>
+      <h3 className="card__subtitle">{subtitle}</h3>  
     ) }
     {text && (
       <p className="card__text">{text}</p>

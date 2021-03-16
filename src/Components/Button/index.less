@@ -4,36 +4,36 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
-    border: 2px solid @app-secondary;
+    border: 2px solid var(--app-secondary);
     background: transparent;
     border-radius: 2rem;
     padding: .5rem 2rem;
-    color: @app-secondary;
+    color: var(--app-secondary);
     font-size: 1rem;
     margin: 0 .25rem;
     cursor: pointer;
 
     &:hover {
-      border-color: darken( @app-special, 2);
-      background: @app-special;
-      color: @app-dark;
+      border-color: var(--app-special);
+      background: var(--app-special);
+      color: var(--app-dark);
     }
 
     &--primary {
-      border-color: @app-primary;
-      background-color: @app-primary;
-      color: @app-white;
+      border-color: var(--app-primary);
+      background-color: var(--app-primary);
+      color: var(--app-white);
     }
   
     &--negative {
-      border-color: @app-white;
-      background-color: @app-white;
-      color: @app-secondary;
+      border-color: var(--app-white);
+      background-color: var(--app-white);
+      color: var(--app-secondary);
 
       &--primary {
-        border-color: @app-white;
-        background-color: @app-white;
-        color: @app-primary;
+        border-color: var(--app-white);
+        background-color: var(--app-white);
+        color: var(--app-primary);
       }
     }
 

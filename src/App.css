@@ -19,6 +19,15 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh6UVew8.ttf) format('truetype');
 }
+:root {
+  --app-primary: #73B2E0;
+  --app-secondary: #8D9090;
+  --app-dark: #4B4F54;
+  --app-light: #efefef;
+  --app-white: #ffffff;
+  --app-black: #000000;
+  --app-special: yellow;
+}
 html,
 body {
   margin: 0;
@@ -27,7 +36,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  color: #4B4F54;
+  color: var(--app-dark);
   font-size: 16px;
 }
 h1,
@@ -49,7 +58,7 @@ p {
   text-align: center;
 }
 .card {
-  background-color: #efefef;
+  background-color: var(--app-light);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -58,16 +67,16 @@ p {
   font-size: calc(10px + 2vmin);
 }
 .card--primary {
-  background-color: #73B2E0;
-  color: #ffffff;
+  background-color: var(--app-primary);
+  color: var(--app-white);
 }
 .card--white {
-  background-color: #ffffff;
-  color: #73B2E0;
+  background-color: var(--app-white);
+  color: var(--app-primary);
 }
 .card--dark {
-  background-color: #4B4F54;
-  color: #ffffff;
+  background-color: var(--app-dark);
+  color: var(--app-white);
 }
 .card[visible-state='reversed'] {
   flex-direction: column-reverse;
@@ -104,7 +113,7 @@ p {
   margin: 2.5vmin;
 }
 .logo--negative-bk {
-  background-color: #ffffff;
+  background-color: var(--app-white);
   border-radius: 40vmin;
 }
 @keyframes App-logo-spin {
@@ -121,34 +130,34 @@ p {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-evenly;
-  border: 2px solid #8D9090;
+  border: 2px solid var(--app-secondary);
   background: transparent;
   border-radius: 2rem;
   padding: 0.5rem 2rem;
-  color: #8D9090;
+  color: var(--app-secondary);
   font-size: 1rem;
   margin: 0 0.25rem;
   cursor: pointer;
 }
 .button:hover {
-  border-color: #f5f500;
-  background: yellow;
-  color: #4B4F54;
+  border-color: var(--app-special);
+  background: var(--app-special);
+  color: var(--app-dark);
 }
 .button--primary {
-  border-color: #73B2E0;
-  background-color: #73B2E0;
-  color: #ffffff;
+  border-color: var(--app-primary);
+  background-color: var(--app-primary);
+  color: var(--app-white);
 }
 .button--negative {
-  border-color: #ffffff;
-  background-color: #ffffff;
-  color: #8D9090;
+  border-color: var(--app-white);
+  background-color: var(--app-white);
+  color: var(--app-secondary);
 }
 .button--negative--primary {
-  border-color: #ffffff;
-  background-color: #ffffff;
-  color: #73B2E0;
+  border-color: var(--app-white);
+  background-color: var(--app-white);
+  color: var(--app-primary);
 }
 .button__text {
   margin: 0 0.125rem;
