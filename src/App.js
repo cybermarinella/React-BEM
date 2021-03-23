@@ -83,7 +83,11 @@ const App = () => {
           img={ <Logo img={logoNega}></Logo>}
           title='BEM • How'
           subtitle='Semantics, naming consistency, selector specificity, exceptions'
-          text='Clear project overview to define properly the right hierarchy'
+          text='Component	c-	c-card c-checklist	Form the backbone of an application and contain all of the cosmetics for a standalone component.
+          Layout module	l-	l-grid l-container	These modules have no cosmetics and are purely used to position c- components and structure an application’s layout.
+          Helpers	h-	h-show h-hide	These utility classes have a single function, often using !important to boost their specificity. (Commonly used for positioning or visibility.)
+          States	is- has-	is-visible has-loaded	Indicate different states that a c- component can have. More detail on this concept can be found inside problem 6 below, but
+          JavaScript hooks	js-	js-tab-switcher	These indicate that JavaScript behavior is attached to a component. No styles should be associated with them; they are purely used to enable easier manipulation with script.'
           element={howElements}
       ></Card>
 
